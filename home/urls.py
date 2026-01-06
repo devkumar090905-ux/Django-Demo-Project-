@@ -23,6 +23,8 @@ urlpatterns = [
     # path('about/',views.about,name="about"),
     # path('service/',views.service,name="service"),
     path('show/',views.show_data,name='show_data'),
+    path('form/',views.form,name='form'),
+    path('login/',views.login,name='login'),
     path('update/<int:id>',views.update_data,name='update_data'),
     path('delete/<int:id>',views.delete_data,name='delete_data'),
         

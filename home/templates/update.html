@@ -7,7 +7,7 @@
 </head>
 <body>
     <h2>Edit data</h2>
-    <form action="post">
+    <form method="post">
         {% csrf_token %}
 
         {{ form.as_p }}

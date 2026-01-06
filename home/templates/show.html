@@ -1,3 +1,8 @@
+{% extends 'base.html' %}
+
+{% block title %}  Data {% endblock title %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,9 +11,12 @@
     <title>show data</title>
 </head>
 <body>
-    <h2>Database data</h2>
-    <table border="1">
-        <tr>
+    {% block content %}
+    <div class="container">
+        <div class="row">
+                <h2>Database data</h2>
+    <table border="3">
+        <tr class="border-2">
             <th>Name</th>
             <th>Email</th>
             <th>Number</th>
@@ -16,10 +24,10 @@
         </tr>
         {% for i in data %}
         <tr>
-            <td>{{i.name}}</td>
-            <td>{{i.email}}</td>
-            <td>{{i.number}}</td>
-            <td>
+            <td class="border-3">{{i.name}}</td>
+            <td class="border-3">{{i.email}}</td>
+            <td class="border-3">{{i.number}}</td>
+            <td class="border-3">
                 <a href="{% url 'update_data' i.id %}">
                     <button>Edit</button>
                 </a>
@@ -30,5 +38,8 @@
         </tr>
         {% endfor %}
     </table>
+        </div>
+    </div>
+    {% endblock %}
 </body>
 </html>

@@ -20,7 +20,7 @@ django-admin startproject <project_name>
 
 ```
 cd <project_name>
-python namage.py runserver <port>
+python manage.py runserver <port>
 (By default 8000)      
 ```
 ### Stap 4: Run your project on Browser
@@ -29,7 +29,7 @@ localhost:<port>
 ```
 - Now you can see a rocket in front of you. Is Rocket lounched mean your project installed.
 
-### Stap 5: goto terminal -> ctrl+c -> to quit the server then, create a new app
+### Stap 5: Goto terminal -> ctrl+c -> to quit the server then, create a new app
 ```
 django-admin startapp <app_name>
 ```
